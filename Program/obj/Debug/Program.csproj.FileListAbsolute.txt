@@ -1,0 +1,7 @@
+C:\Users\maxtr\source\repos\Cadastro-de-paciente\Program\obj\Debug\Program.csproj.AssemblyReference.cache
+C:\Users\maxtr\source\repos\Cadastro-de-paciente\Program\obj\Debug\Program.csproj.CoreCompileInputs.cache
+C:\Users\maxtr\source\repos\Cadastro-de-paciente\Program\bin\Debug\Program.exe.config
+C:\Users\maxtr\source\repos\Cadastro-de-paciente\Program\bin\Debug\Program.exe
+C:\Users\maxtr\source\repos\Cadastro-de-paciente\Program\bin\Debug\Program.pdb
+C:\Users\maxtr\source\repos\Cadastro-de-paciente\Program\obj\Debug\Program.exe
+C:\Users\maxtr\source\repos\Cadastro-de-paciente\Program\obj\Debug\Program.pdb

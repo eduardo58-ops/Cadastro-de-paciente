@@ -1,6 +1,6 @@
 ﻿using System;
 
-public class Pessoa
+public class Paciente
 {
     public string Nome;
     public string CPF;
