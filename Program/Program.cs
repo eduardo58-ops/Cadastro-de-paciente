@@ -83,14 +83,29 @@ namespace Program
                     Console.WriteLine("          ┌────────────────────────────────────┐");
                     Console.WriteLine("          │       EXIBIR: FILA DE ATENDIMENTO  │");
                     Console.WriteLine("          └────────────────────────────────────┘\n");
-                    Console.WriteLine("\nCadastro realizado com sucesso!");
+                    if (!string.IsNullOrWhiteSpace(pac1.Nome))
+                    {
+                        pac1.MostrarDados();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Nenhum paciente na fila no momento.");
+                    }
                 }
                 else if (opcao == "3")
                 {
                     Console.WriteLine("          ┌────────────────────────────────────┐");
                     Console.WriteLine("          │            ATENDIMENTO             │");
                     Console.WriteLine("          └────────────────────────────────────┘\n");
-                    Console.WriteLine("\nCadastro realizado com sucesso!");
+                    if (!string.IsNullOrWhiteSpace(pac1.Nome))
+                    {
+                        Console.WriteLine($"Chamando o próximo paciente: {pac1.Nome} para atendimento!");
+                        pac1 = new Paciente();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Nenhum paciente aguardando atendimento.");
+                    }
                 }
                 else if (opcao == "q")
                 {

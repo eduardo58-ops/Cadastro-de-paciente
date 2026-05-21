@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq;
+using System.Text.RegularExpressions;
 
 public class Paciente
 {
@@ -13,29 +15,33 @@ public class Paciente
     {
         Console.Write("Nome: ");
         this.Nome = Console.ReadLine();
-        while (this.Nome == "")
+        while (this.Nome == "" || this.Nome.Any(char.IsDigit))
         {
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("\nInformação invalida digite novamente\n");
             Console.ResetColor();
             Console.Write("Nome: ");
-            Nome = Console.ReadLine();
+            this.Nome = Console.ReadLine();
         }
 
-        Console.Write("CPF (11 dígitos): ");
+        Console.Write("CPF Ex: 47847847844 (11 dígitos): ");
         this.CPF = Console.ReadLine();
-        while (this.CPF.Length != 11)
+        while (string.IsNullOrWhiteSpace(this.CPF) ||
+            (this.CPF.Length != 11) || 
+            this.CPF == new string(this.CPF[0], 11) || 
+            (this.CPF.Contains("-") && this.CPF.IndexOf('-') == 0 && !this.CPF.Contains(".")))
         {
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("\nInformação invalida digite novamente\n");
+            Console.WriteLine("\nInformação invalida digite novamente (Sem Pontuação ou Espaços)...\n");
             Console.ResetColor();
             Console.Write("CPF(11 dígitos): ");
             this.CPF = Console.ReadLine();
         }
 
+
         Console.Write("Telefone (com DDD, apenas números): ");
         this.Telefone = Console.ReadLine();
-        while (this.Telefone.Length != 11)
+        while (this.Telefone.Length != 11 || (this.Telefone.Contains("-") && this.Telefone.IndexOf('-') == 0 && !this.Telefone.Contains(".")))
         {
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("\nInformação invalida digite novamente\n");
@@ -54,6 +60,7 @@ public class Paciente
             Console.Write("Digite o E-mail: ");
             this.Email = Console.ReadLine();
         }
+
 
         Console.Write("Sexo(M / F): ");
         this.Sexo = Console.ReadLine().ToUpper();
