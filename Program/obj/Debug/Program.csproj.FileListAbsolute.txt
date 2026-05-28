@@ -12,3 +12,11 @@ C:\Users\Eduzera\source\repos\Hospital\Cadastro-de-paciente\Program\obj\Debug\Pr
 C:\Users\Eduzera\source\repos\Hospital\Cadastro-de-paciente\Program\obj\Debug\Program.csproj.CoreCompileInputs.cache
 C:\Users\Eduzera\source\repos\Hospital\Cadastro-de-paciente\Program\obj\Debug\Program.exe
 C:\Users\Eduzera\source\repos\Hospital\Cadastro-de-paciente\Program\obj\Debug\Program.pdb
+C:\Users\lab2090\source\repos\Cadastro-de-paciente\Program\bin\Debug\Program.exe.config
+C:\Users\lab2090\source\repos\Cadastro-de-paciente\Program\bin\Debug\Program.exe
+C:\Users\lab2090\source\repos\Cadastro-de-paciente\Program\bin\Debug\Program.pdb
+C:\Users\lab2090\source\repos\Cadastro-de-paciente\Program\obj\Debug\Program.csproj.AssemblyReference.cache
+C:\Users\lab2090\source\repos\Cadastro-de-paciente\Program\obj\Debug\Program.csproj.CoreCompileInputs.cache
+C:\Users\lab2090\source\repos\Cadastro-de-paciente\Program\obj\Debug\Program.exe
+C:\Users\lab2090\source\repos\Cadastro-de-paciente\Program\obj\Debug\Program.pdb
+C:\Users\lab2090\source\repos\Cadastro-de-paciente\Program\obj\Debug\Program.exe.config

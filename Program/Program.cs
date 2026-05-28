@@ -132,27 +132,6 @@ namespace Program
                 Console.ReadKey();
                 Console.Clear();
 
-                if (opcao == "1" || opcao == "2" || opcao == "3")
-                {
-                    Console.WriteLine("\nTem certeza que quer sair? Caso não, o programa voltará a pagina inicial (S/N)");
-                    string resposta = Console.ReadLine().ToUpper();
-                    while (resposta != "S" && resposta != "N")
-                    {
-                        Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine("\nResposta inválida, digite novamente (S/N)\n");
-                        Console.ResetColor();
-                        resposta = Console.ReadLine().ToUpper();
-                    }
-                    if (resposta == "S")
-                    {
-                        deveContinuar = false;
-                        Console.WriteLine("\nObrigado por usar o sistema de gestão de academia!");
-                    }
-                    else
-                    {
-                        Console.Clear();
-                    }
-                }
             }
             Console.ReadKey();
         }
